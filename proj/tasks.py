@@ -23,4 +23,4 @@ def div(self, x, y):
         result = x / y
     except ZeroDivisionError as e:
         raise self.retry(exc=e, countdown=5, max_retries=3)
-    return result             
+    return result
